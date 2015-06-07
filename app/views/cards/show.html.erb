@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Expirydate:</strong>
+  <%= @card.expiryDate %>
+</p>
+
+<p>
+  <strong>Managingcompany:</strong>
+  <%= @card.managingCompany %>
+</p>
+
+<p>
+  <strong>Saldo:</strong>
+  <%= @card.saldo %>
+</p>
+
+<p>
+  <strong>Limit:</strong>
+  <%= @card.limit %>
+</p>
+
+<p>
+  <strong>Client:</strong>
+  <%= @card.client_id %>
+</p>
+
+<p>
+  <strong>Account:</strong>
+  <%= @card.account_id %>
+</p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @card.status_id %>
+</p>
+
+<p>
+  <strong>Type:</strong>
+  <%= @card.type_id %>
+</p>
+
+<%= link_to 'Edit', edit_card_path(@card) %> |
+<%= link_to 'Back', cards_path %>

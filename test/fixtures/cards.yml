@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  expiryDate: 2015-05-18
+  managingCompany: MyString
+  saldo: 1.5
+  limit: 1.5
+  client_id: 1
+  account_id: 1
+  status_id: 1
+  type_id: 1
+
+two:
+  expiryDate: 2015-05-18
+  managingCompany: MyString
+  saldo: 1.5
+  limit: 1.5
+  client_id: 1
+  account_id: 1
+  status_id: 1
+  type_id: 1

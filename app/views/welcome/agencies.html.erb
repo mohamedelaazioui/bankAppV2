@@ -1,0 +1,37 @@
+
+<div class="container-fluid" ng-controller='branchesCtrl'>
+  <div class=""col-md-2">
+  <p>Search: <span class="glyphicon glyphicon-search"></span></p><input ng-model="query">
+  Sort by:
+  <select ng-model="orderProp">
+    <option value="name">Alphabetical</option>
+    <option value="age">Zip Code</option>
+  </select>
+</div>
+<ul>
+  <div class="cold-md-10">
+    <table class="table">
+      <thead>
+      <tr>
+        <th>Name</th><br>
+        <th>Street</th>
+        <th>Street Number</th>
+        <th>Zip Code</th>
+        <th>City</th>
+      </tr>
+      </thead>
+      <tbody ng-repeat="branch in branches | filter:query | orderBy:orderProp">
+      <tr class="success"></tr>
+      <td>{{ branch.name }}</td>
+      <td>{{ branch.street}}</td>
+      <td>{{ branch.streetNr }}</td>
+      <td>{{ branch.zipCode }}</td>
+      <td>{{ branch.city }}</td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+</ul>
+<%= javascript_include_tag "application" %>
+</div>
+

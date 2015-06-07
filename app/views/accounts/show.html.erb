@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Begindate:</strong>
+  <%= @account.beginDate %>
+</p>
+
+<p>
+  <strong>Expirydate:</strong>
+  <%= @account.expiryDate %>
+</p>
+
+<p>
+  <strong>Saldo:</strong>
+  <%= @account.saldo %>
+</p>
+
+<p>
+  <strong>Rate:</strong>
+  <%= @account.rate %>
+</p>
+
+<p>
+  <strong>Client:</strong>
+  <%= @account.client_id %>
+</p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @account.status_id %>
+</p>
+
+<p>
+  <strong>Category:</strong>
+  <%= @account.category_id %>
+</p>
+
+<%= link_to 'Edit', edit_account_path(@account) %> |
+<%= link_to 'Back', accounts_path %>
